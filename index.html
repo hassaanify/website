@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Muhammad Hassaan Tahir | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#fff;color:#000;scroll-behavior:smooth;}
+
+header{
+position:fixed;top:0;width:100%;
+background: #f0f0f0;
+padding:12px 40px;
+display:flex;justify-content:space-between;align-items:center;
+z-index:1000;border-bottom:1px solid #ccc;
+}
+nav a{
+margin-left:18px;text-decoration:none;color:#000;
+padding-bottom:2px;font-size:14px;
+}
+nav a.active, nav a:hover{border-bottom:2px solid #000;}
+
+section{min-height:auto;padding:30px 30px;}
+.content{max-width:1000px;margin:auto;}
+
+h2{font-size:24px;margin-bottom:8px;}
+h3{font-size:15px;margin-bottom:2px;}
+
+.hero{
+height:100vh;
+background:url('images/i.webp') center/cover no-repeat;
+display:flex;align-items:center;justify-content:center;
+position:relative;
+}
+.hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);}
+.hero-text{position:relative;color:#fff;text-align:center;}
+.hero-text h1{font-size:42px;}
+.hero-text h2{margin-top:12px;font-weight:400;}
+
+.hero-social{margin-top:15px;}
+.hero-social a{color:#fff;font-size:24px;margin:0 10px;}
+
+.cursor{display:inline-block;width:3px;background:#fff;margin-left:4px;animation:blink 0.7s infinite;}
+@keyframes blink{0%,50%,100%{opacity:1;}25%,75%{opacity:0;}}
+
+.about-wrapper{display:flex;gap:20px;align-items:flex-start;}
+.about-image{position:relative;}
+.about-image img{width:280px;border-radius:4px;position:relative;z-index:2;}
+.about-image::before{content:"";position:absolute;top:14px;left:-14px;width:100%;height:100%;border:3px solid #000;z-index:1;}
+
+.about-text h3{font-size:28px;font-weight:600;margin-bottom:8px;}
+.about-links a{text-decoration:none;font-weight:500;color:#000;border-bottom:1px solid #000;}
+.about-meta{margin-bottom:12px;font-size:14px;}
+.about-meta a{color:#000;text-decoration:none;border-bottom:1px solid #000;}
+.about-text p{font-size:15px;line-height:1.6;margin-bottom:10px;}
+.about-text h4{font-size:20px;margin-top:15px;}
+.about-text ul{margin-top:8px;padding-left:15px;}
+.about-text ul li{margin-bottom:4px;}
+
+.card{opacity:0;transform:translateY(30px);transition:0.6s;}
+.card.visible{opacity:1;transform:translateY(0);}
+
+.project-card{
+border:1px solid #ccc;border-radius:8px;padding:10px;background:#f9f9f9;
+transition: transform 0.2s, box-shadow 0.2s;font-size:13px;
+}
+.project-card:hover{transform:translateY(-2px);box-shadow:0 2px 8px rgba(0,0,0,0.15);}
+.project-card h3{font-size:14px;margin-bottom:3px;}
+.project-card p{margin:2px 0 4px 0;}
+.project-card ul{padding-left:14px;margin:3px 0 0 0;}
+.project-card ul li{margin-bottom:3px;}
+
+.publications-list{list-style:disc;padding-left:14px;line-height:1.2;}
+.publications-list li{margin-bottom:6px;}
+.publications-list b{text-decoration:underline;}
+
+footer{text-align:center;padding:8px;border-top:1px solid #ccc;font-size:12px;}
+
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>MUHAMMAD HASSAAN TAHIR</h2>
+<nav>
+<a href="#home" class="nav-link active">Home</a>
+<a href="#about" class="nav-link">About</a>
+<a href="#Work Experience" class="nav-link">Work Experience</a>
+<a href="#publications" class="nav-link">Publications</a>
+<a href="#information" class="nav-link">Information</a>
+<a href="#contact" class="nav-link">Contact</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<div class="hero-overlay"></div>
+<div class="hero-text">
+<h1>I'M MUHAMMAD HASSAAN TAHIR</h1>
+<h2><span id="typed-text"></span><span class="cursor"></span></h2>
+<div class="hero-social">
+<a href="mailto:mhassan.tahir7@gmail.com"><i class="fas fa-envelope"></i></a>
+<a href="https://www.linkedin.com/in/muhammad-hassaan-tahir/" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="content card">
+<div class="about-wrapper">
+<div class="about-image">
+<img src="images/h.png" alt="Muhammad Hassaan Tahir">
+</div>
+<div class="about-text">
+<h3>MUHAMMAD HASSAAN TAHIR</h3>
+<div class="about-links">
+<a href="assets/resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i> CV</a>
+</div>
+<div class="about-meta">
+<a href="mailto:mhassan.tahir7@gmail.com">mhassan.tahir7@gmail.com</a>
+</div>
+<p>I am a Materials Engineer with over 3 years of experience spanning academia and industry. My research focuses on semiconductor fabrication processes including deposition, etching, and characterization for next-generation electronic architectures.</p>
+<p>I hold an MS in Electrical & Electronics Engineering and a BS in Chemistry from Lahore University of Management Sciences (LUMS).</p>
+<h4>Research Interests</h4>
+<ul>
+<li>Semiconductor Fabrication & Processing</li>
+<li>Thin Film Deposition & Etching</li>
+<li>Device Characterization</li>
+<li>Advanced Materials</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="Work Experience">
+<div class="content card">
+<h2>Work Experience</h2>
+<div class="projects-grid" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;">
+<!-- Project cards remain same, just slightly smaller -->
+<div class="project-card" style="flex:1 1 260px;">
+<h3>Process Engineer | Kyma Technologies, Inc.</h3>
+<p><strong>Oct 2025 - Present</strong> | Raleigh, NC</p>
+<ul>
+<li>Optimized HVPE/MOCVD processes using DOE for film uniformity, throughput, and cycle time.</li>
+<li>Delivered high-quality epi wafers and contributed data to DOE/AFRL/DoD β-Ga₂O₃ programs.</li>
+</ul>
+</div>
+<div class="project-card" style="flex:1 1 260px;">
+<h3>Associate Researcher | University of South Carolina</h3>
+<p><strong>Jan 2024 - Present</strong> | Columbia, SC</p>
+<ul>
+<li>Optimized deep-UV β-Ga₂O₃/4H-SiC devices via growth tuning & Si co-doping.</li>
+<li>Characterized interfaces & defect dynamics in MOCVD-grown HFETs using CV profiling & SKPM.</li>
+</ul>
+</div>
+<div class="project-card" style="flex:1 1 260px;">
+<h3>Entrepreneurial Lead | NSF I-Corps</h3>
+<p><strong>Oct 2024 - Aug 2025</strong> | USA</p>
+<ul>
+<li>Led customer discovery, secured $50K funding, validated market needs for wide-bandgap tech.</li>
+<li>Founded startup, filed β-Ga₂O₃ deep-UV detector patent, pursued SBIR/STTR commercialization.</li>
+</ul>
+<p><a href="assets/f.pptx" target="_blank" style="color:blue;">View Slides</a></p>
+</div>
+<div class="project-card" style="flex:1 1 260px;">
+<h3>Design Engineer | Aql Tech Solutions (Pvt) Ltd.</h3>
+<p><strong>Jan 2021 - Jan 2022</strong> | San Francisco Bay Area</p>
+<ul>
+<li>Device design optimization & process correlation.</li>
+<li>Assisted hardware integration, troubleshooting, and documentation across teams.</li>
+</ul>
+</div>
+<div class="project-card" style="flex:1 1 260px;">
+<h3>R&D Intern | Packages Group</h3>
+<p><strong>Jun 2022 - Aug 2022</strong> | Lahore, Pakistan</p>
+<ul>
+<li>Performed materials characterization & lab-based metrology for cost-effective packaging.</li>
+<li>Assisted prototype development with sample prep, testing, and data-driven improvements.</li>
+</ul>
+</div>
+<div class="project-card" style="flex:1 1 260px;">
+<h3>Research Assistant | LUMS</h3>
+<p><strong>Jan 2021 - May 2022</strong> | Pakistan</p>
+<ul>
+<li>Synthesized copper & silver nanoclusters; co-led wastewater remediation projects.</li>
+<li>Taught chemistry, managed labs for 200+ students, grading & tutorials.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="publications">
+<div class="content card">
+<h2>Publications</h2>
+<ul class="publications-list">
+<li><b>Optical and Thermal Characterization of Vertically Conducting β-Ga₂O₃ Diodes Grown on 4H-SiC Substrates for Short-wavelength (&lt;254 nm) Detection</b><br>
+Muhammad Hassaan Tahir · <i>MS Thesis, USC</i>, Oct 15, 2025 ·
+<a href="https://www.proquest.com/docview/3262144415" target="_blank">[pdf]</a></li>
+<li><b>Effect of Growth Conditions on the Performance of Vertically Conducting β-Ga₂O₃ Diodes on 4H-SiC Substrate</b><br>
+Muhammad Hassaan Tahir · <i>IEEE</i>, Sep 30, 2025 ·
+<a href="https://ieeexplore.ieee.org/document/11177119" target="_blank">[pdf]</a></li>
+<li><b>β-Ga₂O₃ Diodes on 4H–SiC for &lt;254 nm Switching/Detection</b><br>
+Muhammad Hassaan Tahir · <i>GOX 2025 Poster</i>, Aug 15, 2025 ·
+<a href="https://github.com/hassaanify/mhassantahir/blob/1ffd25a29284fe978db04b5096a4328940635e45/posters/Hassan_GOX_Poster.pdf" target="_blank">[poster]</a></li>
+<li><b>Surface properties of MOCVD grown (Al₁₋ₓGaₓ)₂O₃ thin films on c-plane sapphire via SKPM</b><br>
+<i>AIP Advances</i>, Dec 30, 2024 ·
+<a href="https://pubs.aip.org/aip/adv/article/14/12/125029/3328587" target="_blank">[pdf]</a></li>
+<li><b>Study of Indium-Silicon Co-doped Gallium Oxide for Effective n-type Doping</b><br>
+<i>Discover USC 2024</i> ·
+<a href="assets/d.pdf" target="_blank">[pdf]</a></li>
+<li><b>Study of Interface Changes between In-situ Grown Dielectric and GaN/AlGaN HFET Structure by MOCVD</b><br>
+<i>Discover USC 2024</i> ·
+<a href="assets/u.pdf" target="_blank">[pdf]</a></li>
+</ul>
+</div>
+</section>
+
+<section id="information">
+<div class="content card">
+<h2>Information</h2>
+<h3>Education</h3>
+<ul>
+<li>MS in Electrical & Electronics Engineering, University of South Carolina</li>
+<li>BS in Chemistry, LUMS (2018–2022)</li>
+</ul>
+<h3 style="margin-top:15px;">Professional Services</h3>
+<ul>
+<li>Graduate Research Assistant, USC (Spring 2024 – Summer 2025)</li>
+<li>Graduate Teaching Assistant, Essentials of Organic Chemistry Lab, USC (2022)</li>
+<li>Graduate Teaching Assistant, Principles of Chemistry, USC (Spring 2023)</li>
+<li>Graduate Teaching Assistant, Principles of Chemistry, USC (Fall 2023)</li>
+<li>Teaching Assistant, Principles of Chemistry Lab, LUMS (2021)</li>
+<li>Teaching Assistant, Principles of Organic Chemistry Lab, LUMS (2022)</li>
+</ul>
+<h3 style="margin-top:15px;">Awards & Honors</h3>
+<ul>
+<li style="margin-bottom:12px;">
+<a href="images/n.jpeg" target="_blank"><img src="images/n.jpeg" alt="NSF I-Corps" style="width:100px;display:block;margin-bottom:4px;cursor:pointer;"></a>
+NSF I-Corps Grant ($50,000) – Entrepreneurial Lead
+</li>
+<li>
+<a href="images/di.jpeg" target="_blank"><img src="images/di.jpeg" alt="Discover USC 2025" style="width:100px;display:block;margin-bottom:4px;cursor:pointer;"></a>
+Discover USC 2025 Reviewer (Mar 2025 – Apr 2025)
+</li>
+</ul>
+</div>
+</section>
+
+<section id="contact">
+<div class="content card">
+<h2>GET IN TOUCH</h2>
+<div style="margin-top:15px;">
+<a href="mailto:mhassan.tahir7@gmail.com" style="color:#000;font-size:20px;margin-right:12px;"><i class="fas fa-envelope"></i></a>
+<a href="https://www.linkedin.com/in/muhammad-hassaan-tahir/" target="_blank" style="color:#000;font-size:20px;"><i class="fab fa-linkedin"></i></a>
+</div>
+<p style="margin-top:20px;font-size:16px;">Raleigh, North Carolina, United States</p>
+</div>
+</section>
+
+<footer>© 2026 Muhammad Hassaan Tahir</footer>
+
+<script>
+const typedTextSpan=document.getElementById("typed-text");
+const textArray=["I'M A MATERIALS ENGINEER","I'M A RESEARCHER","I'M AN INNOVATOR"];
+let i=0,j=0,typing=true;
+function type(){
+if(typing){
+if(j<textArray[i].length){typedTextSpan.textContent+=textArray[i][j++];setTimeout(type,100);}
+else{typing=false;setTimeout(type,1200);}
+}else{
+if(j>0){typedTextSpan.textContent=textArray[i].substring(0,--j);setTimeout(type,50);}
+else{typing=true;i=(i+1)%textArray.length;setTimeout(type,400);}}
+}
+document.addEventListener("DOMContentLoaded",type);
+
+const cards=document.querySelectorAll('.card');
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.2});
+cards.forEach(c=>observer.observe(c));
+
+const sections=document.querySelectorAll("section");
+const navLinks=document.querySelectorAll(".nav-link");
+window.addEventListener("scroll",()=>{let current="";sections.forEach(section=>{const top=section.offsetTop-100;const h=section.offsetHeight;if(pageYOffset>=top&&pageYOffset<top+h){current=section.getAttribute("id");}});navLinks.forEach(link=>{link.classList.remove("active");if(link.getAttribute("href")==="#"+current)link.classList.add("active");});});
+// // Show header background after scrolling past hero
+// const header = document.querySelector("header");
+// window.addEventListener("scroll", () => {
+//   const heroHeight = document.querySelector(".hero").offsetHeight;
+//   if (window.scrollY > heroHeight - 50) { // start showing near end of hero
+//     header.classList.add("scrolled");
+//   } else {
+//     header.classList.remove("scrolled");
+//   }
+// });
+const header = document.querySelector("header");
+window.addEventListener("scroll", () => {
+  const heroHeight = document.querySelector(".hero").offsetHeight;
+  if (window.scrollY > heroHeight - 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+
+</script>
+
+</body>
+</html>
