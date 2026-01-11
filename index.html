@@ -81,6 +81,67 @@ transition: transform 0.2s, box-shadow 0.2s;font-size:13px;
 .publications-list b{text-decoration:underline;}
 
 footer{text-align:center;padding:8px;border-top:1px solid #ccc;font-size:12px;}
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px;
+        flex-direction: column; /* Header items vertically align honge */
+    }
+    header h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Navigation links adjust ho jayenge */
+        justify-content: center;
+        gap: 10px;
+    }
+    nav a {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px; /* Heading size chota kiya */
+    }
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .about-wrapper {
+        flex-direction: column; /* Image aur Text upar niche ayenge */
+        align-items: center;
+        text-align: center;
+    }
+    .about-image img {
+        width: 100%;
+        max-width: 200px; /* Mobile par image size adjust */
+    }
+    .about-image::before {
+        display: none; /* Mobile par extra border hata diya design saaf rakhne ke liye */
+    }
+
+    section {
+        padding: 60px 20px 20px 20px; /* Header ke liye space chori */
+        min-height: 100vh; /* Har portion puri screen cover karega */
+        display: flex;
+        align-items: center;
+    }
+
+    .projects-grid {
+        flex-direction: column; /* Cards aik line mein ayenge */
+    }
+    
+    .project-card {
+        flex: 1 1 100% !important;
+    }
+}
+
+/* Smooth Scrolling fix for iOS */
+body {
+    -webkit-overflow-scrolling: touch;
+}
 
 
 
